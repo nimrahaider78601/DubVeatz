@@ -1,0 +1,171 @@
+.returningcus {
+  .texts {
+    .text-uppercase {
+      font-size: 39px;
+      font-weight: bold;
+    }
+    p {
+      color: #2e2e2e;
+      font-size: 14px;
+      font-weight: 400;
+      span {
+        color: rgb(166, 166, 166);
+      }
+    }
+  }
+  .ret {
+    background-color: #f6f6f6;
+    color: #2e2e2e;
+    font-size: 16px;
+    font-weight: bold;
+    span {
+      color: rgb(186, 0, 0);
+      cursor: pointer;
+    }
+  }
+  .one {
+    .form {
+      .form-group {
+        textarea {
+          background-color: rgb(246, 246, 246);
+          border: none;
+          height: 140px;
+        }
+      }
+      .form-check {
+        input[type="checkbox"] {
+          position: relative;
+          height: 18px;
+          width: 18px;
+        }
+      }
+      .onoffradio {
+        .onofftext {
+          position: relative;
+          top: -1.2rem;
+          left: 3.5rem;
+          width: 500px;
+        }
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 40px;
+          height: 24px;
+        }
+
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+          //   background-color: rgb(166, 166, 166);
+        }
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgb(214, 214, 214);
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 16px;
+          width: 16px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+
+        input:checked + .slider {
+          background-color: #2196f3;
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196f3;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(2px);
+          -ms-transform: translateX(26px);
+          transform: translateX(18px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .two {
+    .order-count {
+      p {
+        color: #646060;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .col-3 {
+        .span1 {
+          color: rgb(186, 0, 0);
+          font-weight: 500;
+        }
+      }
+    }
+    .subtotal {
+      line-height: 2rem;
+      p {
+        color: #646060;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .cash {
+      p {
+        color: #646060;
+        font-size: 16px;
+        font-weight: 500;
+        &:nth-child(1) {
+          color: black;
+        }
+      }
+    }
+    .btn {
+      button {
+        border-radius: 0;
+      }
+    }
+  }
+}
+// Media Query 767px
+
+@media only screen and (max-width: 411px) {
+  .returningcus {
+    overflow-x: hidden !important;
+    .ret {
+      font-size: 14px;
+    }
+  }
+}
+
+// Media Query 767px
+
+@media only screen and (max-width: 420px) {
+  .returningcus {
+    overflow-x: hidden !important;
+    .ret {
+      font-size: 14px;
+    }
+  }
+}

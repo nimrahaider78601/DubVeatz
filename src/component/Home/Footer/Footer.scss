@@ -1,0 +1,173 @@
+.footer {
+  background-color: #ebedf3;
+  // height: 70vh;
+  .texts {
+    position: relative;
+    top: 50px;
+    .text-uppercase {
+      font-size: 33px;
+      font-weight: bold;
+    }
+    p {
+      color: #2e2e2e;
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+  .inner {
+    position: relative;
+    top: 80px;
+    img {
+      width: 149px;
+      height: 54px;
+    }
+  }
+  .inner1 {
+    img {
+      position: relative;
+      top: 129px;
+      z-index: 100;
+    }
+  }
+  .copyright {
+    height: 129px;
+    background-color: rgb(186, 0, 0);
+    .float-left {
+      img {
+        padding: 2px;
+      }
+    }
+    p {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+// Media Query 991px
+
+@media only screen and (max-width: 991px) {
+  .footer {
+    .texts {
+      .text-uppercase {
+        font-size: 33px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .copyright {
+      .float-left {
+        img {
+          padding: 2px;
+          width: 35px;
+        }
+      }
+      p {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Media Query 991px
+
+@media only screen and (max-width: 851px) {
+  .footer {
+    .copyright {
+      .float-left {
+        img {
+          width: 30px;
+        }
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Media Query 991px
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    .inner1 {
+      img {
+        display: none;
+      }
+    }
+    .texts {
+      position: relative;
+      top: 50px;
+    }
+    .inner {
+      position: relative;
+      top: 100px;
+    }
+    .copyright {
+      position: relative;
+      top: 128px;
+      .float-left {
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// Media Query 788px
+
+@media only screen and (max-width: 788px) {
+  .footer {
+    .texts {
+      .text-uppercase {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    .col-md-6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .footer {
+    .texts {
+      .text-uppercase {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Media Query 575px
+
+@media only screen and (max-width: 575px) {
+  .footer {
+    .texts {
+      .text-uppercase {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

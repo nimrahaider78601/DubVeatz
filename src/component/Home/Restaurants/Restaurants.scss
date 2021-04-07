@@ -1,0 +1,285 @@
+.restaurants {
+  .texts {
+    .text-uppercase {
+      font-size: 39px;
+      font-weight: bold;
+    }
+    p {
+      color: #2e2e2e;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-tabs {
+      width: 500px;
+      border: none !important;
+      .nav-item {
+        position: relative;
+        padding: 10px !important;
+        margin: 0 !important;
+        border-bottom: none !important;
+        border-radius: 10px !important;
+      }
+      .active {
+        background-color: rgb(186, 0, 0);
+        color: white !important;
+      }
+    }
+    .tab-content {
+      border: none !important;
+      .flexy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .img {
+          width: 12.5%;
+          height: 140px;
+          padding: 2px;
+          margin: 2px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    nav > .nav.nav-tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+    nav > div a.nav-item.nav-link,
+    nav > div a.nav-item.nav-link.active {
+      border: none;
+      color: #000;
+
+      margin-right: 5px !important;
+      margin-left: 5px !important;
+      font-weight: 400;
+    }
+
+    .tab-content {
+      padding: 30px 25px;
+    }
+
+    nav > div a.nav-item.nav-link:hover,
+    nav > div a.nav-item.nav-link:focus {
+      border: none;
+      background: rgb(186, 0, 0);
+      color: #fff;
+    }
+  }
+}
+
+// Media Query 991px
+
+@media only screen and (max-width: 991px) {
+  .restaurants {
+    .tabs {
+      .tab-content {
+        .flexy {
+          &:nth-child(3),
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+    }
+    .texts {
+      .text-uppercase {
+        font-size: 36px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// Media Query 788px
+
+@media only screen and (max-width: 788px) {
+  .restaurants {
+    .tabs {
+      .tab-content {
+        .flexy {
+          &:nth-child(3),
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+    }
+    .texts {
+      .text-uppercase {
+        font-size: 34px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .restaurants {
+    .tabs {
+      .nav-tabs {
+        .nav-item {
+          font-size: 14px;
+        }
+      }
+      .tab-content {
+        .flexy {
+          .img {
+            width: 25%;
+
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8) {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 575px
+
+@media only screen and (max-width: 575px) {
+  .restaurants {
+    .texts {
+      .text-uppercase {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .tabs {
+      .nav-tabs {
+        padding-left: 20px;
+        padding-right: 20px;
+        .nav-item {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Media Query 575px
+
+@media only screen and (max-width: 420px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .restaurants {
+    .texts {
+      .text-uppercase {
+        font-size: 27px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .tabs {
+      .nav-tabs {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        .nav-item {
+          font-size: 12px;
+          width: 50px;
+          &:nth-child(5),
+          &:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+      .tab-content {
+        width: 100vw !important;
+      }
+    }
+  }
+}
+
+// Media Query 575px
+
+@media only screen and (max-width: 411px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .restaurants {
+    .texts {
+      .text-uppercase {
+        font-size: 27px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .tabs {
+      .nav-tabs {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        .nav-item {
+          font-size: 12px;
+          width: 50px;
+          &:nth-child(5),
+          &:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+      .tab-content {
+        width: 100vw !important;
+      }
+    }
+  }
+}
+
+// Media Query 575px
+
+@media only screen and (max-width: 360px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .restaurants {
+    .texts {
+      .text-uppercase {
+        font-size: 27px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .tabs {
+      .nav-tabs {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        .nav-item {
+          font-size: 10px;
+          width: 50px;
+          &:nth-child(5),
+          &:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+      .tab-content {
+        width: 100vw !important;
+      }
+    }
+  }
+}

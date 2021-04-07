@@ -1,0 +1,385 @@
+.detailpage {
+  .heading {
+    .col-md-3 {
+      img {
+        height: 120px;
+        width: 120px;
+      }
+    }
+    .col-md-9 {
+      .small-head {
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .timing {
+        font-size: 18px;
+        font-weight: 500;
+        .span1 {
+          color: rgb(186, 0, 0);
+        }
+      }
+    }
+  }
+  .rightpara {
+    color: #282827;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .one {
+    p {
+      color: #646060;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .two {
+    h5 {
+      font-size: 16px;
+      .span1 {
+        color: rgb(186, 0, 0);
+      }
+    }
+    .input-group {
+      input {
+        background-color: #fff;
+      }
+      .input-group-append {
+        .input-group-text {
+          background-color: #fff;
+          border: none;
+          color: rgb(167, 168, 182);
+        }
+      }
+    }
+    .food-items {
+      .col-6 {
+        p {
+          color: #646060;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+      .col-3 {
+        .span1 {
+          color: #646060;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .span2 {
+          i {
+            cursor: pointer;
+            height: 31px;
+            width: 31px;
+            color: rgb(186, 0, 0);
+            border: 1px solid rgb(186, 0, 0);
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+  }
+  .three {
+    h5 {
+      font-size: 16px;
+    }
+    .radios {
+      /* label */
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 12px 0;
+        cursor: pointer;
+        position: relative;
+      }
+
+      /* input */
+      input {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      /* .design */
+      .design {
+        height: 10px;
+        width: 10px;
+        border: 1px solid rgb(143, 143, 143);
+        background: rgb(143, 143, 143);
+        border-radius: 100%;
+
+        position: absolute;
+        left: -1rem;
+      }
+
+      .design::before,
+      .design::after {
+        content: "";
+        display: block;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        position: absolute;
+        transform: scale(0);
+        transform-origin: center center;
+      }
+
+      .design:before {
+        background: red;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .design::after {
+        background: white;
+        opacity: 0.4;
+        transition: 0.6s;
+      }
+
+      /* .text */
+      .text {
+        color: #1f1e1e;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .para2 {
+        font-size: 14px;
+        position: absolute;
+        top: 2rem;
+      }
+      /* checked state */
+      input:checked + .design::before {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* other states */
+      input:hover + .design,
+      input:focus + .design {
+        border: 1px solid rgb(143, 143, 143);
+      }
+
+      input:hover + .design:before,
+      input:focus + .design:before {
+        background: red;
+      }
+
+      input:hover ~ .text {
+        color: red;
+      }
+
+      input:focus + .design::after,
+      input:active + .design::after {
+        opacity: 0.1;
+        transform: scale(2.6);
+      }
+    }
+    .order-count {
+      p {
+        color: #646060;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .col-3 {
+        .span1 {
+          color: rgb(186, 0, 0);
+          font-weight: 500;
+        }
+      }
+    }
+    .subtotal {
+      line-height: 2rem;
+      p {
+        color: #646060;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .main {
+        background-color: #d9d8d8;
+        p:nth-child(1) {
+          font-size: 18px;
+          color: black;
+        }
+        p:nth-child(2) {
+          font-size: 18px;
+          color: rgb(186, 0, 0);
+        }
+      }
+    }
+    .btn {
+      button {
+        border-radius: 0;
+        margin: 0 !important;
+      }
+    }
+    // Second radio
+    .radio {
+      /* label */
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 12px 0;
+        cursor: pointer;
+        position: relative;
+      }
+
+      /* input */
+      input {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      /* .design */
+      .design {
+        height: 10px;
+        width: 10px;
+        border: 1px solid rgb(143, 143, 143);
+        background: rgb(143, 143, 143);
+        border-radius: 100%;
+
+        position: absolute;
+        left: -1rem;
+      }
+
+      .design::before,
+      .design::after {
+        content: "";
+        display: block;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        position: absolute;
+        transform: scale(0);
+        transform-origin: center center;
+      }
+
+      .design:before {
+        background: red;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .design::after {
+        background: white;
+        opacity: 0.4;
+        transition: 0.6s;
+      }
+
+      /* .text */
+      .text {
+        position: absolute;
+        top: 0;
+        color: #646060;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .para2 {
+        font-size: 14px;
+        position: absolute;
+        top: 2rem;
+        left: -0.5rem;
+      }
+      /* checked state */
+      input:checked + .design::before {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* other states */
+      input:hover + .design,
+      input:focus + .design {
+        border: 1px solid rgb(143, 143, 143);
+      }
+
+      input:hover + .design:before,
+      input:focus + .design:before {
+        background: red;
+      }
+
+      input:hover ~ .text {
+        color: red;
+      }
+
+      input:focus + .design::after,
+      input:active + .design::after {
+        opacity: 0.1;
+        transform: scale(2.6);
+      }
+    }
+  }
+
+  // PopUp1 Css Strat
+
+  .popup1 {
+    .modal-body {
+      .span1 {
+        width: 8rem;
+      }
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 0.3rem;
+      }
+      span.text {
+        color: #646060;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .input-group {
+        position: relative;
+        top: -0.2rem;
+        width: 40%;
+        input[type="text"] {
+          border: none;
+          text-align: center;
+          color: #646060;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .input-group-btn {
+          i {
+            cursor: pointer;
+            font-weight: 400;
+            border: 1px solid rgb(186, 0, 0);
+            color: rgb(186, 0, 0);
+            border-radius: 100px;
+            padding: 10px 12px;
+          }
+        }
+      }
+      .text-center {
+        .btn {
+          border: 2px solid rgb(186, 0, 0);
+          color: rgb(186, 0, 0);
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  // Popup2 Css Start
+
+  .popup2 {
+    .modal-body {
+      p {
+        color: #646060;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .btn {
+        background-color: rgb(186, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@import "./RespDetail";

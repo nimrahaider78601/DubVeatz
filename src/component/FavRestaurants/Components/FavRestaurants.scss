@@ -1,0 +1,372 @@
+.FavRestaurants {
+  .searchbar {
+    .main-form {
+      box-shadow: 0 0 10px rgba(128, 128, 128, 0.513);
+      background-color: rgb(246, 246, 246);
+      border-radius: 25px;
+      input:focus,
+      select:focus,
+      textarea:focus,
+      button:focus {
+        box-shadow: inset 0 -1px 0 #ddd;
+      }
+      .form-group {
+        margin: 0px;
+        width: 300px;
+        outline: none;
+        .input-group-append {
+          background-color: rgb(246, 246, 246);
+          height: 47px;
+          border: none;
+          border-top-left-radius: 0px 0px;
+          border-bottom-left-radius: 0 0;
+          border-top-right-radius: 0 0;
+          border-bottom-right-radius: 0 0;
+          .input-group-text {
+            border-top-left-radius: 0px 0px;
+            border-bottom-left-radius: 0 0;
+            border-top-right-radius: 0 0;
+            border-bottom-right-radius: 0 0;
+            background-color: rgb(246, 246, 246) !important;
+            border: none;
+            pointer-events: none;
+          }
+        }
+      }
+      .form-control {
+        border-top: none;
+        border-bottom: none;
+        font-family: FontAwesome;
+        height: 47px;
+        outline: none;
+        border-top-left-radius: 0px 0px;
+        border-bottom-left-radius: 0 0;
+        border-top-right-radius: 0 0;
+        border-bottom-right-radius: 0 0;
+        &:focus {
+          box-shadow: inset 0 -0px 0 rgba(221, 221, 221, 0);
+        }
+      }
+      .fst {
+        border-top-left-radius: 20px 30px;
+        border-bottom-left-radius: 20px 30px;
+        border-top-right-radius: 0 0;
+        border-bottom-right-radius: 0 0;
+      }
+      .second {
+        border-right: none;
+      }
+      button {
+        background-color: rgb(186, 0, 0);
+        color: white;
+        text-transform: uppercase;
+        height: 47.5px;
+        width: 100px !important;
+        border-top-left-radius: 0px 0px;
+        border-bottom-left-radius: 0 0;
+        border-top-right-radius: 20px 30px;
+        border-bottom-right-radius: 20px 30px;
+        &:focus {
+          box-shadow: inset 0 -0px 0 rgba(221, 221, 221, 0);
+        }
+      }
+    }
+  }
+  .one {
+    .border-top {
+      h5 {
+        font-size: 17px;
+      }
+    }
+    .more-cuisines {
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+      }
+      .cuip {
+        color: rgb(186, 0, 0);
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .text {
+        color: #646060;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+  .two {
+    .texts {
+      p {
+        font-size: 17px;
+        font-weight: bold;
+        .span2 {
+          color: rgb(186, 0, 0);
+        }
+        .span1 {
+          color: #bebebe;
+        }
+      }
+    }
+    .restaurantz {
+      .row {
+        .col-md-3 {
+          img {
+            position: absolute;
+            left: 14%;
+            height: 145px;
+            width: 145px;
+          }
+          .bg-suc {
+            background-color: rgb(3, 167, 3);
+            color: white;
+            position: absolute;
+            left: 7%;
+            top: 0.7rem;
+            &:before {
+              position: absolute;
+              content: "";
+              left: 0;
+              top: 1.9rem;
+              width: 0;
+              height: 0;
+              border-left: 10px solid transparent;
+              border-right: 0px solid transparent;
+              border-top: 12px solid rgb(3, 144, 3);
+            }
+          }
+          i {
+            font-size: 20px;
+            color: rgb(3, 167, 3);
+            font-weight: bold;
+            border: 2px solid #a1a1a1;
+            cursor: pointer;
+          }
+          .btn {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 3px solid rgb(186, 0, 0);
+            border-radius: 50px;
+            color: rgb(186, 0, 0);
+          }
+        }
+        .col-md-6 {
+          .btn {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 3px solid rgb(186, 0, 0);
+            border-radius: 50px;
+            color: rgb(186, 0, 0);
+          }
+          h5 {
+            small {
+              color: rgb(186, 0, 0);
+            }
+          }
+          .small-head {
+            color: #626364;
+            font-size: 15px;
+            font-weight: 500;
+          }
+          .location {
+            span {
+              color: #626364;
+              font-size: 15px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  .three {
+    .line {
+      line-height: 2rem;
+      span {
+        color: #4e4e4e;
+        font-size: 15px;
+        font-weight: 500;
+        i {
+          width: 2rem;
+          font-size: 20px;
+          color: black;
+        }
+        .fa-thumbs-up {
+          color: rgb(186, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+// Media Query 991px
+
+@media only screen and (max-width: 991px) {
+  .FavRestaurants {
+    .searchbar {
+      .main-form {
+        .form-group {
+          width: 220px;
+        }
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+    .one,
+    .three {
+      display: none;
+    }
+    .two {
+      width: 100vw;
+      .restaurantz {
+        .row {
+          .heartdiv {
+            display: none;
+          }
+          .bg-suc {
+            &:before {
+              top: 1.3rem;
+            }
+          }
+          .col-md-6 {
+            .btn {
+              display: block;
+              border: 2px solid rgb(186, 0, 0);
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 767px
+
+@media only screen and (max-width: 767px) {
+  .FavRestaurants {
+    // Searchbar
+    .searchbar {
+      .main-form {
+        border-radius: 25px;
+        background-color: #fff;
+        .form-group {
+          margin: 0px;
+          width: 100%;
+          border: none !important;
+          margin-top: 10px;
+          .input-group-append {
+            border-top-left-radius: 0px 0px;
+            border-bottom-left-radius: 0 0;
+            border-top-right-radius: 30px 30px;
+            border-bottom-right-radius: 30px 30px;
+            .input-group-text {
+              border-top-left-radius: 0px 0px;
+              border-bottom-left-radius: 0 0;
+              border-top-right-radius: 30px 30px;
+              border-bottom-right-radius: 30px 30px;
+            }
+          }
+        }
+        .form-control {
+          background-color: #f6f6f6;
+          border: none !important;
+          border-top-left-radius: 30px 30px;
+          border-bottom-left-radius: 30px 30px;
+          border-top-right-radius: 0 0;
+          border-bottom-right-radius: 0 0;
+        }
+        .fst {
+          border-top-left-radius: 30px 30px;
+          border-bottom-left-radius: 30px 30px;
+          border-top-right-radius: 30px 30px;
+          border-bottom-right-radius: 30px 30px;
+        }
+
+        button {
+          margin-top: 10px;
+          width: 100% !important;
+          border-top-left-radius: 30px 30px;
+          border-bottom-left-radius: 30px 30px;
+          border-top-right-radius: 30px 30px;
+          border-bottom-right-radius: 30px 30px;
+        }
+      }
+    }
+    .one,
+    .three {
+      display: block;
+    }
+    .two {
+      .restaurantz {
+        .row {
+          .heartdiv {
+            display: none !important;
+          }
+          .col-md-3 {
+            position: relative;
+            img {
+              position: relative;
+              left: 5%;
+              height: 120px;
+              width: 120px;
+            }
+            .bg-suc {
+              position: absolute;
+              left: 2%;
+              font-size: 12px;
+              top: 0.7rem;
+              &:before {
+                position: absolute;
+                content: "";
+                top: 1.6rem;
+              }
+            }
+          }
+          .col-md-6 {
+            .btn {
+              display: block;
+              border: 2px solid rgb(186, 0, 0);
+              border-radius: 10px;
+            }
+
+            .location {
+              span {
+                color: #626364;
+                font-size: 15px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 767px
+
+@media only screen and (max-width: 411px) {
+  .FavRestaurants {
+    overflow-x: hidden !important;
+    .ones {
+      background-color: #000;
+    }
+  }
+}
+
+// Media Query 767px
+
+@media only screen and (max-width: 420px) {
+  .FavRestaurants {
+    overflow-x: hidden !important;
+    .ones {
+      background-color: #000;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+// Media Query 767px
+
+@media only screen and (max-width: 1199px) {
+  .fooddetailpage {
+    .row {
+      .one {
+        img {
+          width: 100%;
+        }
+      }
+      .two {
+        .toppings {
+          .wells {
+            .span1 {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .order-count {
+          .input-group {
+            width: 25%;
+            input[type="text"] {
+              height: 50px;
+            }
+
+            .input-group-append,
+            .input-group-prepend {
+              .input-group-text {
+                height: 50px;
+              }
+            }
+          }
+          .button {
+            button {
+              height: 50px;
+            }
+            .fa-heart-o {
+              font-size: 30px;
+            }
+            .fa-check-circle-o {
+              position: relative;
+              top: -0.5rem;
+              left: -0.5rem;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Media Query 767px
+
+@media only screen and (max-width: 991px) {
+  .fooddetailpage {
+    .row {
+      .two {
+        .toppings {
+          .wells {
+            .col-6 {
+              .span1 {
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        .order-count {
+          .input-group {
+            width: 50%;
+          }
+        }
+        .button {
+          button {
+            width: 150px;
+          }
+          .fa-heart-o,
+          .fa-check-circle-o {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+// Media Query 767px
+
+@media only screen and (max-width: 767px) {
+  .fooddetailpage {
+    .row {
+      .two {
+        .toppings {
+          .wells {
+            .col-6 {
+              .span1 {
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        .order-count {
+          .input-group {
+            width: 30%;
+          }
+        }
+        .button {
+          button {
+            width: 200px;
+          }
+          .fa-heart-o,
+          .fa-check-circle-o {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+// Media Query 767px
+
+@media only screen and (max-width: 411px) {
+  .fooddetailpage {
+    .row {
+      .calories {
+        .calorie {
+          &:nth-child(4),
+          &:nth-child(5) {
+            display: none;
+          }
+        }
+      }
+      .two {
+        .order-count {
+          .input-group {
+            width: 36%;
+          }
+        }
+        .button {
+          button {
+            width: 150px;
+          }
+          .fa-heart-o,
+          .fa-check-circle-o {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 767px
+
+@media only screen and (max-width: 420px) {
+  .fooddetailpage {
+    .row {
+      .calories {
+        .calorie {
+          &:nth-child(4),
+          &:nth-child(5) {
+            display: none;
+          }
+        }
+      }
+      .two {
+        .order-count {
+          .input-group {
+            width: 36%;
+          }
+        }
+        .button {
+          button {
+            width: 150px;
+          }
+          .fa-heart-o,
+          .fa-check-circle-o {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

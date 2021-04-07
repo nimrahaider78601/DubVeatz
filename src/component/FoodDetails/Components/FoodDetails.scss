@@ -1,0 +1,194 @@
+.fooddetailpage {
+  .texts {
+    i {
+      cursor: pointer;
+      font-weight: 400;
+      border: 2px solid rgb(0, 0, 0);
+      color: rgb(186, 0, 0);
+      border-radius: 100px;
+      padding: 10px 12px;
+    }
+  }
+  .one {
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #646060;
+    }
+  }
+  .two {
+    .texts {
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #646060;
+      }
+    }
+    .calories {
+      .calorie {
+        width: 6rem;
+        line-height: 1rem;
+        background-color: rgb(240, 239, 239);
+        p {
+          &:nth-child(1),
+          &:nth-child(3) {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(166, 166, 166);
+          }
+          &:nth-child(2) {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(71, 71, 71);
+            border-bottom: 1px solid rgb(165, 165, 165);
+          }
+          &:nth-child(4) {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(71, 71, 71);
+          }
+        }
+      }
+    }
+    .protiendes {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgb(165, 165, 165);
+    }
+    .heartbeat {
+      font-size: 16px;
+      font-weight: 500;
+      color: #646060;
+    }
+    .buttons {
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #646060;
+      }
+      .btn {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .toppings {
+      fieldset {
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+      .wells {
+        min-height: 20px;
+        padding: 19px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        background-color: #ffffff;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+      }
+      .well-legend {
+        display: block;
+        font-size: 16px;
+        width: auto;
+        padding: 2px 7px 2px 5px;
+        margin-bottom: 20px;
+        line-height: inherit;
+        color: #333;
+        background: #fff;
+        border: none;
+        border-radius: 4px;
+      }
+      .col-6 {
+        .span1 {
+          border-radius: 5px;
+          background-color: rgb(240, 239, 239);
+          input[type="checkbox"] {
+            height: 17px;
+            width: 17px;
+          }
+          .text {
+            position: relative;
+            top: -0.2rem;
+            font-size: 15px;
+            font-weight: 500;
+            color: #646060;
+          }
+        }
+      }
+    }
+    .order-count {
+      .input-group {
+        width: 25%;
+        input[type="text"] {
+          height: 60px;
+          border: none;
+          text-align: center;
+          color: #3b3b3b;
+          font-size: 18px;
+          font-weight: bold;
+          background-color: rgb(240, 239, 239);
+        }
+        .input-group-append,
+        .input-group-prepend {
+          .input-group-text {
+            background-color: rgb(240, 239, 239);
+            // border: none;
+          }
+        }
+        .input-group-append {
+          .input-group-text {
+            border: none;
+            border-top-left-radius: 0 0;
+            border-bottom-left-radius: 0px 0px;
+            border-top-right-radius: 40px 30px;
+            border-bottom-right-radius: 40px 30px;
+          }
+        }
+        .input-group-prepend {
+          .input-group-text {
+            border: none;
+            border-top-left-radius: 40px 30px;
+            border-bottom-left-radius: 40px 30px;
+            border-top-right-radius: 0 0;
+            border-bottom-right-radius: 0 0;
+          }
+        }
+      }
+      .button {
+        button {
+          height: 60px;
+          width: 200px;
+          border-radius: 50px;
+          background-color: rgb(186, 0, 0);
+          color: white;
+          text-transform: uppercase;
+        }
+        .fa-heart-o {
+          font-size: 25px;
+        }
+        .fa-check-circle-o {
+          position: relative;
+          top: -0.5rem;
+          left: -0.5rem;
+          background-color: #fff;
+        }
+      }
+    }
+    .categories {
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #646060;
+        span {
+          background-color: rgb(240, 239, 239);
+          border-radius: 50px;
+          color: rgb(166, 166, 166);
+        }
+      }
+    }
+  }
+}
+@import "./RespDetails";

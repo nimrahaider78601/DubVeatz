@@ -1,0 +1,304 @@
+@import "./LoginRes.scss";
+.row {
+  .text-left {
+    label {
+      color: #22272d;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    input {
+      height: 45px;
+      background-color: #f6f6f6;
+      border: none;
+    }
+  }
+  .flex-left {
+    label {
+      color: #22272d;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    input {
+      border: none !important;
+      outline: none !important;
+      width: 31px;
+      height: 31px;
+      background-color: #ffffff !important;
+      box-shadow: none;
+    }
+  }
+  .flex-right {
+    label {
+      color: rgb(186, 0, 0);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  .onoff {
+    p {
+      color: #3f3e3e;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .onoffradio {
+      .onofftext {
+        position: relative;
+        top: -1.2rem;
+        left: 3.5rem;
+        width: 500px;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        //   background-color: rgb(166, 166, 166);
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(186, 0, 0);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: green;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px green;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(2px);
+        -ms-transform: translateX(26px);
+        transform: translateX(18px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    }
+  }
+  .endpara {
+    p {
+      font-size: 22px;
+      color: #3f3e3e;
+      font-weight: 600;
+      span {
+        color: #c00a27;
+      }
+    }
+  }
+  .form-group {
+    button {
+      width: 193px;
+      height: 50px;
+      background-color: rgb(186, 0, 0);
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .radios {
+      /* label */
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        margin: 12px 0;
+
+        cursor: pointer;
+        position: relative;
+      }
+
+      /* input */
+      input {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      /* .design */
+      .design {
+        height: 20px;
+        width: 20px;
+        border: 1px solid rgb(143, 143, 143);
+        background: rgb(143, 143, 143);
+        border-radius: 100%;
+        margin-right: 16px;
+        position: relative;
+      }
+
+      .design::before,
+      .design::after {
+        content: "";
+        display: block;
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        position: absolute;
+        transform: scale(0);
+        transform-origin: center center;
+      }
+
+      .design:before {
+        background: red;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .design::after {
+        background: white;
+        opacity: 0.4;
+        transition: 0.6s;
+      }
+
+      /* .text */
+      .text {
+        color: #1f1e1e;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      /* checked state */
+      input:checked + .design::before {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* other states */
+      input:hover + .design,
+      input:focus + .design {
+        border: 1px solid rgb(143, 143, 143);
+      }
+
+      input:hover + .design:before,
+      input:focus + .design:before {
+        background: red;
+      }
+
+      input:hover ~ .text {
+        color: red;
+      }
+
+      input:focus + .design::after,
+      input:active + .design::after {
+        opacity: 0.1;
+        transform: scale(2.6);
+      }
+    }
+  }
+  .social {
+    button {
+      width: 193px;
+      height: 50px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .social1 {
+    background-color: #0585af;
+  }
+  .social2 {
+    background-color: rgb(186, 0, 0);
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    box-shadow: inset 0 -0px 0 #ddd;
+    border: none;
+  }
+}
+.testing {
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-tabs {
+      border: none !important;
+      .nav-item {
+        cursor: pointer !important;
+        font-weight: bold;
+        font-size: 14px;
+        position: relative;
+        margin: 0 !important;
+        border-bottom: none !important;
+        border-radius: 50px !important;
+      }
+      .active {
+        background-color: rgb(186, 0, 0);
+        color: white !important;
+        font-weight: bold;
+      }
+    }
+  }
+
+  nav > .nav.nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active {
+    border: none;
+    color: #000;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    font-weight: 400;
+  }
+
+  .tab-content {
+    padding: 30px 25px;
+  }
+
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus {
+    border: none;
+    background: rgb(186, 0, 0);
+    color: #fff;
+    font-weight: bold;
+  }
+}
